@@ -118,6 +118,7 @@ body {
 
 header.container-lg {
     max-height: 75px;
+    align-items: center;
 }
 
 header div ul.flex  {
@@ -127,7 +128,7 @@ header div ul.flex  {
     padding: 23px;
 }
 
-.bottone {
+.button {
     font-size: 18px;
     border: none;
     padding: 10px 20px;
@@ -138,6 +139,7 @@ header div ul.flex  {
 .hero-title {
     font-size: 40px;
     font-weight: 700;
+    padding: 50px 0px;
 }
 
 .hero-content div.flex {
@@ -145,7 +147,19 @@ header div ul.flex  {
     gap: 20px;
 }
 
-.hero-content div:last-child {
+.arrow-down {
     margin-top: auto;
+    margin-bottom: 7%;
+    font-size: 70px;
+}
+
+.hero.container {
+    max-height: 800px;
+}
+
+.hero.container .hero-content button.button {
+    max-width: 250px;
+    background-color: #0061FF;
+    color: white;
 }
 
