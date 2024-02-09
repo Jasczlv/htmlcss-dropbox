@@ -81,6 +81,10 @@ body {
     width: calc(4 * 100% / 12 );
 }
 
+.col-12 {
+    width: 100%;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -111,7 +115,7 @@ body {
 }
 
 .container-lg {
-    max-width: 100%;
+    max-width: 2000px;
 }
 
 
@@ -150,12 +154,7 @@ header div ul.flex  {
 
 .arrow-down {
     margin-top: auto;
-    margin-bottom: 7%;
     font-size: 70px;
-}
-
-.hero.container {
-    max-height: 800px;
 }
 
 .hero.container .hero-content button.button {
@@ -165,6 +164,9 @@ header div ul.flex  {
 }
 
 /* piano business */
+.business-plan-container {
+    flex-wrap: wrap;
+}
 
 .h2-business {
     font-size: 30px;
@@ -182,11 +184,93 @@ header div ul.flex  {
 }
 
 .business-plan-content {
-    padding: 40px;
+    padding: 30px;
+}
+
+
+.plan-card-padding {
+    padding: 22px;
+}
+
+.business-plan-content .button {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 14px;
+}
+
+.business-plan-header {
+    width: 100%;
+}
+
+.business-plan-content ul.flex {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.business-plan-content ul.flex {
+    font-size: 14px;
+}
+
+.business-plan-content li button.button {
+    background-color: #0061FF;
+    color: white;
+}
+
+.business-plan-content ul.flex li:nth-child(2) {
+    font-weight: 600;
+}
+
+.business-plan-content ul.flex li:nth-child(3) {
+    color: rgb(194, 194, 194);
+}
+
+.trattino {
+    margin: 30px 0;
+    width: 50px;
+    color: rgba(255, 255, 255, 0.452);
+}
+
+.business-plan-footer-container.col-12 {
+    padding: 30px;
 }
 
 .business-plan-footer {
-    margin-top: 50px;
     border: 1px solid #c7c7cc;
-    height: 100px;
+    margin-bottom: 150px;
+}
+
+.business-plan-footer-content.flex .flex-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.business-plan-footer-content {
+    padding: 20px;
+    align-items: center;
+}
+
+.business-plan-footer-content .button {
+    background-color: #0061FF;
+    color: white;
+    font-size: 14px;
+}
+
+
+.features-container .col-4 img {
+    width: 100%;
+}
+
+.features-container{
+    margin-bottom: 100px;
+}
+
+.features-cards {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.features-cards div.flex {
+    padding: 30px;
 }
