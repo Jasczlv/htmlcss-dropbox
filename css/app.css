@@ -123,7 +123,7 @@ body {
 }
 
 .container-lg {
-    max-width: 2000px;
+    max-width: 100%;
 }
 
 
@@ -265,6 +265,11 @@ header div ul.flex  {
     font-size: 14px;
 }
 
+/* entra in contatto con partner dropbox */
+
+
+
+/* features */
 
 .features-container .col-4 img {
     width: 100%;
@@ -272,6 +277,11 @@ header div ul.flex  {
 
 .features-container{
     margin-bottom: 100px;
+    padding-top: 150px;
+}
+
+.features-container>h2 {
+    font-size: 45px;
 }
 
 .features-cards {
@@ -281,6 +291,12 @@ header div ul.flex  {
 
 .features-cards div.flex {
     padding: 30px;
+}
+
+.features-cards div.flex h5 {
+    margin: 20px 0;
+    font-size: 22px;
+    text-align: left;
 }
 
 .h3-partner {
@@ -297,37 +313,52 @@ header div ul.flex  {
     flex-wrap: wrap;
 }
 
-.svg-designit {
-    align-items: center;
+.svg-items {
     padding: 75px;
+    aspect-ratio: 1;
 }
 
-.svg-container.flex .flex.col-4 div.svg-designit {
-    fill: white;
+
+.svg-container.flex div:first-child.flex.col-4 div div.svg-items {   
     background-color: #A2D39B;
-    max-width: 320px;
-    min-height: 320px;
 }
 
-.svg-container.flex .flex.col-4 div:nth-child(2) {
-    fill: white;
+.svg-container.flex div:first-child.flex.col-4 div:nth-child(2) {
     background-color: #61082B;
-    max-width: 320px;
-    min-height: 320px;
 }
 
-.svg-container.flex .flex.col-4 div:nth-child(3) {
-    fill: white;
+.svg-container.flex div:first-child.flex.col-4 div:nth-child(3) {
     background-color: #0093CE;
-    max-width: 320px;
-    min-height: 320px;
 }
 
-.svg-container.flex .flex.col-4 div:nth-child(4) {
-    fill: white;
+.svg-container.flex div:first-child.flex.col-4 div:nth-child (3) svg {
+    max-height: 25%;
+    align-self: center;
+}
+
+.svg-container.flex div:first-child.flex.col-4 div:nth-child(4) {
     background-color: #FF1C1C;
-    max-width: 320px;
-    min-height: 320px;
+}
+
+.svg-container.flex div:nth-child(3).flex.col-4 div:first-child {
+    background-color: #D5001F;
+}
+
+.svg-container.flex div:nth-child(3).flex.col-4 div:nth-child(2) {
+    background-color: #B4D0E7;
+}
+
+.svg-container.flex div:nth-child(3).flex.col-4 div:nth-child(3) {
+    background-color: #0D2481;
+}
+
+.svg-container.flex div:nth-child(3).flex.col-4 div:nth-child(4) {
+    background-color: #FFD830;
+}
+
+.svg-container.flex .flex.col-4 div {
+    text-align: center;
+    object-fit: cover;
 }
 
 .designit-description {
@@ -339,6 +370,10 @@ header div ul.flex  {
 
 .designit-description div:first-child {
     max-width: 300px;
+}
+
+.designit-description div:first-child img {
+    filter: invert();
 }
 
 .background-prova-gratuita {
@@ -399,12 +434,28 @@ header div ul.flex  {
     color: white;
 }
 
+.background-black .container-lg .row {
+        max-width: 1300px;
+        padding: 80px;
+        gap: 40px;
+}
+
+.background-black .container-lg .row .text-blue{
+    font-weight: 800;
+    font-size: 22px;
+}
+
 .background-black .container-lg .row div{
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    gap: 35px;
-    padding: 80px;
+    font-size: 18px;
     margin: 0 auto;
-    flex-grow: 0;
+    flex-grow: 1;
+    line-height: 25px;
+}
+
+footer div.container-lg div.row {
+    margin: 0 auto;
+}
+
+footer li {
+    line-height: 45px;
 }
